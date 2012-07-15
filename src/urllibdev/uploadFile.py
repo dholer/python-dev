@@ -62,9 +62,9 @@ if __name__ == '__main__':
                ('file[]',imgdata.name,imgdata.read())               
                ]
         
-        fields =[('test','eee')]
+        fields ={'test':'33'}
         
-        content_type, upload_data = uploadfile(fields, files)
+        content_type, upload_data = uploadfile(fields.items(), files)
         
         Header={
                 "User-Agent": "Mozilla/5.0 (Windows NT 5.1; rv:2.0.1) Gecko/20100101 Firefox/4.0.1",                
